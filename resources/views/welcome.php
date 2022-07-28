@@ -13,13 +13,13 @@
       <div class="col">
         <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
         <?php if($project->image): ?> 
-            style="background-image: url('<?= asset('storage/'.$project->image) ?>');"
+            style="background-image: url('<?= asset($project->image) ?>');background-size: cover;"
         <?php else: ?>
             style="background-image: url('unsplash-photo-1.jpg');"
         <?php endif; ?>
         >
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <a href='/project/<?= $project->slug ?>'>
+            <a href='/view/project/<?= $project->slug ?>'  style="text-decoration: none; color: #fff">
                 <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><?= $project->title ?></h2>
             </a>
             <ul class="d-flex list-unstyled mt-auto">

@@ -24,7 +24,7 @@
       <ul class="nav nav-pills">
         <li class="nav-item"><a href="../../" class="nav-link active" aria-current="page">Home</a></li>
         <?php if(Auth::check()): ?> 
-          <li class="nav-item"><a href="logout" class="nav-link">Sair</a></li>
+          <li class="nav-item"><a href="../console/logout" class="nav-link">Sair</a></li>
         <?php else: ?>
           <li class="nav-item"><a href="console/login" class="nav-link">Login</a></li>
         <?php endif; ?> 

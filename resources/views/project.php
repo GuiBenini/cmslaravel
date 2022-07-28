@@ -1,30 +1,20 @@
 
 <?= view('layout.header') ?>
 
-<section class="w3-padding">
-
-    <h2 class="w3-text-blue"><?= $project->title ?></h2>
+<div class="container">
+    <h2 ><?= $project->title ?></h2>
 
     <?php if($project->image): ?>
-        <div class="w3-margin-top">
-            <img src="<?= asset('storage/'.$project->image) ?>" width="400">
-        </div>
+        <img src="<?= asset($project->image) ?>" width="400">
     <?php endif; ?>
 
     <p><?= $project->content ?></p>
 
     <?php if($project->url): ?>
-        View Project: <a href="<?= $project->url ?>"><?= $project->url ?></a>
+        Veja mais no link: <a href="<?= $project->url ?>"><?= $project->url ?></a>
     <?php endif; ?>
 
-    <p>
-        Posted: <?= $project->created_at->format('M j, Y') ?>
-        <br>
-        Type: <?= $project->type->title ?>
-    </p>
-
-    <a href="/">Back to Home</a>
-
-</section>
-
+    Adicionado em: <?= $project->created_at->format('M j, Y') ?>
+    Categoria: <?= $project->type->title ?>
+</div>
 <?= view('layout.footer') ?>
