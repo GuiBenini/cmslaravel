@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Laravel - A PHP Framework For Web Artisans
+ * Laravel - CMS
  *
  * @package  Laravel
- * @author   Taylor Otwell <taylor@laravel.com>
+ * @author   Gui/ ajuda web
  */
 
 $uri = urldecode(

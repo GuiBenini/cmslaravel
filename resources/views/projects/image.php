@@ -14,7 +14,7 @@
             <tr>
                 <td>
                     <?php if($project->image): ?>
-                        <img src="<?= asset('storage/app/'.$project->image) ?>" width="50">
+                        <img src="<?= asset($project->image) ?>" width="50">
                     <?php endif; ?>
                 </td>
                 <td>
